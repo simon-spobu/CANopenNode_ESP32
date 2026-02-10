@@ -488,7 +488,7 @@ void CO_CANmodule_process(CO_CANmodule_t *CANmodule)
             {
                 status |= CO_CAN_ERRTX_WARNING | CO_CAN_ERRTX_PASSIVE;
             }
-            else if (rxErrors >= 96)
+            else if (txErrors >= 96)
             {
                 status |= CO_CAN_ERRTX_WARNING;
             }
